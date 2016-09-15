@@ -37,11 +37,11 @@ foreach($file in $changeScriptFiles)
 
     try
     {
-				<#
-					this needs to be altered if the account executing the call does not
-					have Windows auth and login privileges on the SQL Server target instance
-				#>
-				Invoke-SqlCmd -ServerInstance $sqlServerInstance -Database "master" -InputFile $file;
+	<#
+		this needs to be altered if the account executing the call does not
+		have Windows auth and login privileges on the SQL Server target instance
+	#>
+	Invoke-SqlCmd -ServerInstance $sqlServerInstance -Database "master" -InputFile $file;
     }
     catch
     {
