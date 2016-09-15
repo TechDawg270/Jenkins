@@ -1,4 +1,4 @@
-# JenkinsScripts
+# Jenkins Scripts
 
 ## APP_CI_SET_INSTANCE_BUILDDATE_Git.ps1
 Automated versioning for .NET web apps using Git tags and Jenkins build number
